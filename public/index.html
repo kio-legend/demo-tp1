@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fleurine - Boutique de fleurs</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">Fleurine</a>
+      <nav aria-label="Navigation principale">
+        <a href="#bouquets">Bouquets</a>
+        <a href="#livraison">Livraison</a>
+        <a href="/admin">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Fleurs fraiches a Lyon</p>
+          <h1>Des bouquets simples, beaux, livres dans la journee.</h1>
+          <p>Composez une attention lumineuse avec nos fleurs de saison preparees a la main chaque matin.</p>
+          <a class="button" href="#bouquets">Voir les bouquets</a>
+        </div>
+      </section>
+
+      <section id="bouquets" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selection</p>
+          <h2>Nos bouquets du moment</h2>
+        </div>
+        <div class="product-grid" id="products"></div>
+      </section>
+
+      <section id="livraison" class="delivery-band">
+        <div>
+          <p class="eyebrow">Livraison</p>
+          <h2>Commande avant 14h, livraison aujourd'hui.</h2>
+        </div>
+        <p>Chaque bouquet est emballe dans du papier recycle, avec une carte message offerte.</p>
+      </section>
+    </main>
+
+    <script src="/shop.js" type="module"></script>
+  </body>
+</html>

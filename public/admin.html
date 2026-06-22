@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fleurine - Administration</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="admin-page">
+    <header class="topbar admin-topbar">
+      <a class="brand" href="/">Fleurine Admin</a>
+      <nav aria-label="Navigation administration">
+        <a href="/">Boutique</a>
+        <a href="/admin">Commandes</a>
+      </nav>
+    </header>
+
+    <main class="admin-layout">
+      <aside class="sidebar">
+        <span class="badge">Aucune protection</span>
+        <h1>Tableau de bord</h1>
+        <p>Cette page est volontairement accessible sans authentification pour illustrer une faille Broken Access Control.</p>
+      </aside>
+
+      <section class="admin-content">
+        <div class="metrics">
+          <article>
+            <span>CA du jour</span>
+            <strong>219,30 EUR</strong>
+          </article>
+          <article>
+            <span>Commandes</span>
+            <strong>12</strong>
+          </article>
+          <article>
+            <span>Alertes stock</span>
+            <strong>3</strong>
+          </article>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>Commandes recentes</h2>
+            <button id="refresh-orders">Actualiser</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Commande</th>
+                <th>Client</th>
+                <th>Total</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody id="orders"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="/admin.js" type="module"></script>
+  </body>
+</html>
